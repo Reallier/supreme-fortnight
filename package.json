@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@octokit/core": "^6.1.2",
+    "fs-extra": "^11.2.0",
+    "klaw-sync": "^6.0.0",
+    "prettier": "^3.3.2",
+    "yaml": "^2.4.5"
+  },
+  "scripts": {
+    "build": "bun run clean && bun scripts/gen-workflows.js && prettier --write .",
+    "clean": "rm -f .github/workflows/*.yml"
+  },
+  "devDependencies": {
+    "@types/github-script": "github:actions/github-script"
+  }
+}

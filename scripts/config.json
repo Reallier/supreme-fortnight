@@ -1,0 +1,26 @@
+{
+  "paths": [
+    {
+      "path": "builds/stack",
+      "registry": "ghcr.io/kitkat-starter/stack",
+      "mirror": "ccr.ccs.tencentyun.com/karasu/stck",
+      "schedule": [
+        {
+          "cron": "30 5 * * 5"
+        }
+      ],
+      "extraScanFiles": ["php-fpm/scripts/*", "aria2/scripts/*"]
+    },
+    {
+      "path": "builds/pter-java",
+      "registry": "ghcr.io/kitkat-starter/pter-java",
+      "mirror": "ccr.ccs.tencentyun.com/cpdd/jva",
+      "schedule": [
+        {
+          "cron": "30 9 * * 2"
+        }
+      ],
+      "extraScanFiles": []
+    }
+  ]
+}
